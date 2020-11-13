@@ -10,7 +10,7 @@ def generate_model_visual(predictor, model_image_fname='model.png'):
     best_model_node = predictor.get_model_best()
     
     A = nx.nx_agraph.to_agraph(G)
-    A.graph_attr['label'] = 'Ensemble stack (Blue box is the best model)'
+    A.graph_attr['label'] = 'Ensemble stack (Dark orange box is the best model)'
     A.graph_attr['labelloc']='t'
 
     A.graph_attr.update(rankdir='BT')
